@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-abn-lookup",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "ABN Lookup MCP — BYOK wrapper around the Australian Business Register's ABN Lookup JSON web services (https://abr.business.gov.au/json/).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-abn-lookup": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "abn-lookup"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-abn-lookup.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/abn-lookup",
   "pipeworx": {
-    "sourceHash": "v1-e8a42a959ef7c61673be8715d2ba37b17c90a6b3e6df0d488b0b166acf159939",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "abn-lookup",
+    "gatewaySlug": "abn-lookup",
+    "sourceHash": "v1-0731d7404b651c6aca366a5a750f7654f5fef529bdcae34904558249519dfadf",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
