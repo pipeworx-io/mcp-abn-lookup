@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-abn-lookup",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "ABN Lookup MCP — BYOK wrapper around the Australian Business Register's ABN Lookup JSON web services (https://abr.business.gov.au/json/).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "abn-lookup",
     "gatewaySlug": "abn-lookup",
-    "sourceHash": "v1-0731d7404b651c6aca366a5a750f7654f5fef529bdcae34904558249519dfadf",
-    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
+    "sourceHash": "v1-6928156f639cdd0c6c8c8963d8ddf0df3811957ff3161785e7ba23eb5931a17d",
+    "sourceCommit": "aef970216f5309cdd22a27ddfc275e472aaadac1"
   }
 }
